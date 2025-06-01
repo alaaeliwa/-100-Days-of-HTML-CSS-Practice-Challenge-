@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Days of HTML & CSS Practice</title>
+    <style>
+      :root {
+        --pink-light: #ffe6f0;
+        --pink: #ff99cc;
+        --pink-dark: #cc6699;
+        --text-color: #5b2945;
+        --hover-color: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--pink-light);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: var(--pink-dark);
+        text-shadow: 1px 1px 2px #fff;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      .day {
+        background: var(--pink);
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(255, 153, 204, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .day:hover {
+        background: var(--pink-dark);
+        color: var(--hover-color);
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 12px rgba(204, 102, 153, 0.4);
+      }
+
+      @media (max-width: 500px) {
+        .day {
+          height: 80px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌟 100 Days of HTML & CSS Practice Challenge 🧠💻</h1>
+    <div class="grid">
+      <a href="Day001/index.html" class="day">Day 1</a>
+    </div>
+  </body>
+</html>
