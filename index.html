@@ -22,12 +22,33 @@
         align-items: center;
         padding: 2rem;
       }
-
-      h1 {
+      .pro div {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #5b2945;
+        border-radius: 50%;
+      }
+      .pro {
+        display: flex;
+        margin-bottom: 50px;
+      }
+      .pro h3 {
+        font-size: 1rem;
+        margin-right: 1rem;
+        color: var(--pink-dark);
+        text-shadow: 1px 1px 2px #fff;
+        text-align: center;
+      }
+      .day10 {
+        background: #ff99cc;
+      }
+      h1,
+      h2 {
         font-size: 2.5rem;
         margin-bottom: 2rem;
         color: var(--pink-dark);
         text-shadow: 1px 1px 2px #fff;
+        text-align: center;
       }
 
       .grid {
@@ -65,11 +86,28 @@
           height: 80px;
           font-size: 0.9rem;
         }
+        h1 {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
   <body>
     <h1>🌟 100 Days of HTML & CSS Practice Challenge 🧠💻</h1>
+    <h2>Progress</h2>
+    <div class="pro">
+      <h3>10%</h3>
+      <div class="day10"></div>
+      <div class="day20"></div>
+      <div class="day30"></div>
+      <div class="day40"></div>
+      <div class="day50"></div>
+      <div class="day60"></div>
+      <div class="day70"></div>
+      <div class="day80"></div>
+      <div class="day90"></div>
+      <div class="day100"></div>
+    </div>
     <div class="grid">
       <a href="Day001/index.html" class="day">Day 1</a>
       <a href="Day002/index.html" class="day">Day 2</a>
@@ -81,7 +119,12 @@
       <a href="Day008/index.html" class="day">Day 8</a>
       <a href="Day009/index.html" class="day">Day 9</a>
       <a href="Day010/index.html" class="day">Day 10</a>
-      <div style="color: var(--text-color); ">★☆☆☆☆☆☆☆☆☆</div>
+    </div>
+    <div style="font-size: 30px; margin: 10px 0; color: var(--text-color)">
+      ★☆☆☆☆☆☆☆☆☆
+    </div>
+    <div class="grid">
+      <a href="Day011/index.html" class="day">Day 11</a>
     </div>
   </body>
 </html>
