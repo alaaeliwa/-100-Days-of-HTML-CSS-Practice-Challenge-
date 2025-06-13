@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #16161623;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+}
+.logo span {
+  color: #ff99cc;
+  font-weight: 700;
+}
+nav a,
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: 2em;
+  transition: 0.7s ease;
+}
+nav a:hover {
+  color: #ff99cc;
+}
+.btn,
+.btn-Talk,
+.read-more {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #cc6699;
+  border-radius: 25px;
+}
+.sub:hover {
+  transform: scale(1.1);
+}
+.home {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/25.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 200px 100px;
+}
+
+.home h1 {
+  font-size: 5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.home h1 span {
+  color: #ff99cc;
+}
+.home p {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.email {
+  width: 350px;
+  position: relative;
+}
+.email input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 1px 10px #ff99cc;
+}
+.email .btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  padding: 100px 100px;
+}
+.imgbox {
+  width: 50%;
+}
+.imgbox img {
+  width: 70%;
+  border-radius: 8px;
+}
+.content {
+  width: 50%;
+  color: #fff;
+}
+.content h2 {
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+.content h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.content h3 span {
+  color: #ff99cc;
+}
+.content p {
+  margin-bottom: 25px;
+  color: #8e8d8d;
+}
+.btn-Talk,
+.read-more {
+  color: #fff;
+  border: 1px solid transparent;
+  transition: 0.7s ease;
+}
+.btn-Talk:hover,
+.read-more:hover {
+  border: 1px solid #cc6699;
+  background-color: transparent;
+}
+.services {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #030303;
+  color: #fff;
+  padding: 200px 100px;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #161616;
+  min-height: 19em;
+  width: 18em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px 20px;
+}
+.fa-bars {
+  color: #ff99cc;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+.card h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.card p {
+  margin-bottom: 50px;
+  color: #8e8d8d;
+}
+.work {
+  min-height: fit-content;
+  width: 100%;
+  background-color: #161616;
+  color: #fff;
+  text-align: center;
+  padding: 50px 100px;
+}
+.work p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #030303;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-title {
+  font-size: 1em;
+  font-weight: 600;
+}
+footer .footer-title span {
+  color: #cc6699;
+}
+footer .icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  color: #fff;
+}
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+  nav {
+    display: none;
+  }
+  .home {
+    padding: 200px 50px;
+  }
+  .home h3 {
+    font-size: 1em;
+  }
+  .home h1 {
+    font-size: 2.5em;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .imgbox {
+    width: 100%;
+  }
+  .imgbox img {
+    width: 70%;
+    border-radius: 8px;
+  }
+  .content {
+    width: 100%;
+    color: #fff;
+  }
+  .content h2,
+  .content h3 {
+    font-size: 2.5em;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+  .services {
+    padding: 0;
+    padding-top: 50px;
+  }
+  .cards {
+    flex-direction: column;
+    width: 100%;
+  }
+  .work {
+    height: fit-content;
+    padding: 20px 100px;
+  }
+  .work p {
+    font-size: 2em;
+  }
+  .email {
+    width: 250px;
+    position: relative;
+  }
+  .email .btn {
+    position: absolute;
+    right: 2px;
+    top: 4px;
+  }
+}
