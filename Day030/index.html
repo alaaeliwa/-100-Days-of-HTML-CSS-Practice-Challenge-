@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Landing Page</title>
+  </head>
+  <body>
+    <section class="showcase active">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle">
+          <i class="fas fa-bars open-icon"></i>
+          <i class="fas fa-times close-icon"></i>
+        </div>
+      </header>
+      <video src="images/nature.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          eveniet fugit fugiat blanditiis quam cum. Officia dolorum laborum non
+          consectetur?
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const toggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+      const menu = document.querySelector(".menu");
+
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+        menu.classList.toggle("active"); // ضروري هذا السطر!
+      });
+    </script>
+  </body>
+</html>
