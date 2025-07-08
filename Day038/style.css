@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", "Nunito", sans-serif;
+  background: #1d1b2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  margin: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #1d1b2f;
+}
+.title {
+  color: #f4edea;
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: 700;
+}
+.card {
+  padding: 30px 40px;
+  background-color: #f4edea;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+span {
+  font-size: 15px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+ul li::marker {
+  color: #ff5e6c;
+}
+button {
+  color: #1d1b2f;
+  margin-top: 50px;
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #ff5e6c;
+  background: transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #ff5e6c;
+}
