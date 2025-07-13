@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #93c572 70%, #c8ebb1 30%);
+  position: relative;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+nav {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0.3rem 1.3rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: #494234;
+  position: relative;
+  z-index: 1;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: #c8ebb1;
+  z-index: -1;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.main-content {
+  width: 60%;
+  padding-top: 100px;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.image-pista,
+.main-text {
+  flex-basis: 50%;
+}
+.image-pista img {
+  width: 65%;
+}
+.main-content h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #494234;
+}
+.main-content p {
+  margin-top: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.main-content button {
+  margin-top: 2.5rem;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border-radius: 0 10px 0 10px;
+  background: #494234;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-content button:hover {
+  border-radius: 10px;
+  background: #363126;
+}
+.swiper {
+  width: 30rem;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  position: absolute;
+  right: 8%;
+  bottom: 20%;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+.right .box .image img {
+  width: 70%;
+}
+.image {
+  margin-top: 2rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: -5px 5px 17px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.image:hover {
+  background-color: rgba(73, 66, 52, 0.7);
+}
+.box .inner-box {
+  margin: 1.5rem 0 0 1rem;
+}
+.social {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.social i {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #93c572;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.social::before {
+  content: "";
+  width: 80%;
+  height: 3px;
+  position: absolute;
+  top: 42%;
+  left: -150px;
+  background: #494234;
+}
+.social i:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    position: relative;
+  }
+  nav ul {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-pista,
+  .main-text {
+    flex-basis: 90%;
+    z-index: 1;
+  }
+  .main-content h1 {
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #494234;
+  }
+  .main-content button {
+    display: block;
+    margin: 2.5rem auto;
+    align-items: center;
+    padding: 0.5rem 2.5rem;
+  }
+  .right {
+    position: relative;
+    right: 8%;
+    bottom: -41%;
+  }
+
+  .right .box .image img {
+    width: 70%;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .inner-box {
+    margin: 1rem 0 0 0;
+  }
+  .image {
+    background-color: rgba(73, 66, 52, 0.7);
+  }
+  .social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 2rem auto;
+  }
+  .social i {
+    background-color: #494234;
+    color: #c8ebb1;
+  }
+  .social::before {
+    width: 20%;
+    left: -10px;
+  }
+}
