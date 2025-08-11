@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ploject 67 || Elessi</title>
+  </head>
+  <body>
+    <header>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <a href="#" class="logo"
+        ><img src="image/elessi-pet-logo.png" alt="logo"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">Elements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Vendors</a></li>
+      </ul>
+      <div class="nav-icon">
+        <a href="#"><i class="bx bx-dialpad"></i></a>
+        <a href="#"><i class="bx bx-user-circle"></i></a>
+        <a href="#"><i class="bx bx-search"></i></a>
+      </div>
+    </header>
+    <section class="home">
+      <div class="text">
+        <h4>New Fashion</h4>
+        <h1>
+          Spring Summer <br />
+          Collection
+        </h1>
+        <p>
+          It s A Long Established Fact That A Reader Will Be Distracted B The
+          Readable Content
+        </p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </section>
+    <script>
+      const menu = document.querySelector("#menu-icon");
+      const navlist = document.querySelector(".navbar");
+      menu.onclick = () => {
+        navlist.classList.toggle("bx-x");
+        navlist.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
