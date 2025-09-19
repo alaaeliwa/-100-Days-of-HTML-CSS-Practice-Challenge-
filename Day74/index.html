@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>YOU SHOP</title>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="info">
+        <a href="tel:+8001234567890"
+          ><i class="fa-solid fa-phone"></i>(+800) 123 456 7890</a
+        >
+        <a href="mailto:manager@shop.com"
+          ><i class="fa-solid fa-envelope"></i>manager@shop.com</a
+        >
+      </div>
+      <div class="info">
+        <a href="#"><i class="fa-solid fa-location-dot"></i>Location store</a>
+        <a href="#"><i class="fa-solid fa-blog"></i>Blog</a>
+        <a href="#"><i class="fa-solid fa-shield-halved"></i>Guarantee</a>
+        <a href="#"><i class="fa-solid fa-credit-card"></i>Payment</a>
+        <a href="#"><i class="fa-solid fa-truck"></i>Delivery</a>
+        <a href="#"><i class="fa-solid fa-user"></i>Register or Sign in</a>
+      </div>
+    </div>
+    <header>
+      <a href="#" class="logo">you<span>shop</span></a>
+      <p class="des">
+        Description of your<br />
+        online store
+      </p>
+      <div class="search">
+        <input type="text" class="searchinput" placeholder="Search" />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <p class="time">
+        7 days a week from<br />
+        8:00 am to 5:00 pm
+      </p>
+      <div class="icon-wrapper">
+        <i class="fa-solid fa-heart"></i>
+        <span class="badge">13</span>
+      </div>
+      <div class="icon-wrapper cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="text">
+        <h3>My cart</h3>
+        <p>$0.00</p>
+      </div>
+    </header>
+    <hr />
+    <nav class="cotegories">
+      <ul>
+        <li>
+          <a href="#" class="active"
+            ><i class="fa-solid fa-bars"></i> All Cotegories</a
+          >
+        </li>
+        <li><a href="#">Apple</a></li>
+        <li><a href="#">Samsung</a></li>
+        <li><a href="#">Meizu</a></li>
+        <li><a href="#">Xiaomi</a></li>
+        <li><a href="#">Honor</a></li>
+        <li><a href="#">Asus</a></li>
+        <li><a href="#">Nokia</a></li>
+        <li><a href="#">Motorola</a></li>
+        <li><a href="#">Caterpillar</a></li>
+      </ul>
+    </nav>
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="#">Home /</a></li>
+        <li><a href="#">Categories /</a></li>
+        <li>Tablet & Laptops Accessories</li>
+      </ul>
+    </nav>
+    <section class="products">
+      <h2 class="title">Tablet & Laptops Acceccories</h2>
+      <div class="container">
+        <aside class="left-side">
+          <div class="filters">
+            <div class="box">
+              <details class="filter">
+                <summary>Related Categories</summary>
+                <div class="filter-body">
+                  <span>< cotegories</span>
+                  <p>Tablet & Laptops Acceccories</p>
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Refine by</summary>
+                <div class="filter-body">
+                  <div class="tag">
+                    <span class="tag-label">Android 6.0</span>
+                    <button class="tag-remove">×</button>
+                  </div>
+                  <span class="clear">Clear All</span>
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Price</summary>
+                <div class="filter-body">
+                  <div class="sliders" id="price-slider">
+                    <div class="range-bg"></div>
+                    <div class="range-fill"></div>
+
+                    <input
+                      type="range"
+                      id="min-price"
+                      min="55"
+                      max="5000"
+                      value="55"
+                      step="1"
+                    />
+                    <input
+                      type="range"
+                      id="max-price"
+                      min="55"
+                      max="5000"
+                      value="5000"
+                      step="1"
+                    />
+                  </div>
+                  <p>
+                    Price: <span id="min-value">$55</span> —
+                    <span id="max-value">$5,000</span>
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Operating System</summary>
+                <div class="filter-body">
+                  <a href="#" class="active">Android 6.0</a>
+                  <a href="#">Android 5.1</a>
+                  <a href="#">Android 5.0</a>
+                  <a href="#">Android 4.4</a>
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Screen Size</summary>
+                <div class="filter-body">
+                  <a href="#">1920×1200</a>
+                  <a href="#">1280×800</a>
+                  <a href="#">2560×1600</a>
+                  <a href="#">1920×1080</a>
+                  <a href="#">2560×1600</a>
+                  <a href="#">1920×1080</a>
+                  <a href="#">1920×1080</a>
+                  <a href="#">1920×1080</a>
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Processor Core</summary>
+                <div class="filter-body">
+                  <!-- option -->
+                </div>
+              </details>
+            </div>
+            <div class="box">
+              <details class="filter">
+                <summary>Tablet Data Capacity</summary>
+                <div class="filter-body">
+                  <!-- option -->
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="product-tag">
+            <h3 class="title">Product tag</h3>
+            <button>Asus tablet</button>
+            <button>Windows tablet</button>
+            <button>Xiaomi tablet</button>
+            <button>Hover</button>
+          </div>
+        </aside>
+        <div class="product">
+          <div class="header">
+            <div class="view-toggle">
+              <button class="active">
+                <i class="fa-solid fa-border-all"></i>
+              </button>
+              <button><i class="fa-solid fa-list"></i></button>
+              <p>Showing 16 / 125 results</p>
+            </div>
+            <div class="tag">
+              <select class="select">
+                <option>Sort by : price low to high</option>
+                <option>Sort by : price high to low</option>
+              </select>
+            </div>
+          </div>
+          <div class="products-grid">
+            <div class="card new">
+              <img src="imges/pro1.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro2.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro3.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro4.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card new">
+              <img src="imges/pro5.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro6.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro7.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro8.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro9.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro10.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro11.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro12.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card discount">
+              <img src="imges/pro12.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$800 <span class="dis">$1000.00</span></h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro13.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro14.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="imges/pro15.png" alt="pro1" />
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star no-rating"></i>
+              </div>
+              <p>BDF 10 inch Design 3G</p>
+              <h3>$1000</h3>
+              <div class="hover-butt">
+                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="show-more">
+            <button><i class="fa-solid fa-rotate-right"></i> Show more</button>
+          </div>
+          <div class="pages">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <span>...</span>
+            <button>26</button>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="recently-view">
+            <h2 class="title">Recently Viewed</h2>
+            <div class="products-grid">
+              <div class="card">
+                <img src="imges/pro7.png" alt="pro1" />
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star no-rating"></i>
+                </div>
+                <p>BDF 10 inch Design 3G</p>
+                <h3>$1000</h3>
+                <div class="hover-butt">
+                  <button>Add to Cart</button>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imges/pro8.png" alt="pro1" />
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star no-rating"></i>
+                </div>
+                <p>BDF 10 inch Design 3G</p>
+                <h3>$1000</h3>
+                <div class="hover-butt">
+                  <button>Add to Cart</button>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imges/pro9.png" alt="pro1" />
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star no-rating"></i>
+                </div>
+                <p>BDF 10 inch Design 3G</p>
+                <h3>$1000</h3>
+                <div class="hover-butt">
+                  <button>Add to Cart</button>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imges/pro10.png" alt="pro1" />
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star no-rating"></i>
+                </div>
+                <p>BDF 10 inch Design 3G</p>
+                <h3>$1000</h3>
+                <div class="hover-butt">
+                  <button>Add to Cart</button>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="most-search">
+      <h2 class="title">Most Search Keywords</h2>
+      <dl class="keys">
+        <dt>Laptops:</dt>
+        <dd>Appleo Laptop</dd>
+        <dd>Acero Laptop</dd>
+        <dd>Samsing Laptop</dd>
+        <dd>Lenov Laptop</dd>
+        <dd>Sonyo Laptop</dd>
+        <dd>Delli Laptop</dd>
+        <dd>Asuso Laptop</dd>
+        <dd>Toshibao Laptop</dd>
+        <dd>LGG Laptop</dd>
+        <dd>HPO Laptop</dd>
+      </dl>
+      <dl class="keys">
+        <dt>Tablet:</dt>
+        <dd>FUKIO Watches</dd>
+        <dd>Titan Watches</dd>
+        <dd>Casioo Watches</dd>
+        <dd>Fastrack Watches</dd>
+        <dd>Timexi Watches</dd>
+        <dd>Fossili Watches</dd>
+        <dd>Dieselo Watches</dd>
+        <dd>Toshibao Watches</dd>
+        <dd>Luxury Watches</dd>
+      </dl>
+      <dl class="keys">
+        <dt>Mobile phone:</dt>
+        <dd>Shoes</dd>
+        <dd>Casual Shoes</dd>
+        <dd>Sports Shoes</dd>
+        <dd>Addidasi Shoes</dd>
+        <dd>Gas Shoes</dd>
+        <dd>Pumai Shoes</dd>
+        <dd>Reeboki Shoes</dd>
+        <dd>Woodlandi Shoes</dd>
+        <dd>Red Tape Shoes</dd>
+        <dd>Nikeo Shoes</dd>
+      </dl>
+    </section>
+    <footer>
+      <div class="col">
+        <h3>Contact us</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> (+800) 123 456 7890</li>
+          <li><i class="fa-regular fa-envelope"></i>manager@shop.com</li>
+          <li><i class="fa-solid fa-location-dot"></i>Location store</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Policies & Info</h3>
+        <ul>
+          <li>Terms Conditions</li>
+          <li>Policy for Sellers</li>
+          <li>Policy for Buyers</li>
+          <li>Shipping & Refund</li>
+          <li>Wholesale Policy</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Seller Login</li>
+          <li>Seller Sign up</li>
+          <li>Seller Handbook</li>
+          <li>Seller Control</li>
+          <li>Panel Seller FAQs</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>My account</h3>
+        <ul>
+          <li>Accessories</li>
+          <li>Balcony Tabl</li>
+          <li>Bar Units</li>
+          <li>Beds</li>
+          <li>Bedside Tables</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Subscribe now</h3>
+        <p>
+          Contrary to popular belief of lorem Ipsm <br />
+          Latin amet Itin from.
+        </p>
+        <div class="email search">
+          <input type="text" placeholder="Your E-mail address" />
+          <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>Copyright © 2025 Alaa' Hani Eliwa</p>
+      <div class="img">
+        <img src="imges/bitcoin.png" alt="" />
+        <img src="imges/card.png" alt="" />
+        <img src="imges/discover.png" alt="" />
+        <img src="imges/google-wallet.png" alt="" />
+        <img src="imges/maestro.png" alt="" />
+        <img src="imges/paypal.png" alt="" />
+        <img src="imges/cash-on-delivery.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
